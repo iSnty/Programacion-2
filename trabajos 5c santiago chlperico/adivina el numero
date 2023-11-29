@@ -1,0 +1,25 @@
+Algoritmo sin_titulo
+	definir numpc, numusuario como entero
+	numpc = Aleatorio(1,20)
+	Escribir "!ingrese su numero!"
+	Leer numusuario
+	Si numusuario = numpc Entonces
+		Escribir "perfecto acertaste el numero era: ", numpc
+	SiNo
+		Escribir "El numero es incorrecto te quedan 2 vidas"
+		Escribir "ingrese otro numero"
+		Leer numusuario
+		Si numusuario = numpc Entonces
+			Escribir "perfeco acertaste el numero era: ", numpc
+		SiNo
+			Escribir "el numero ingresado es incorrecto te quedan 1 vidas"
+			Escribir "ingrese otro numero"
+			Leer numusuario
+			Si numusuario = numpc Entonces
+				Escribir "perfecto acertaste el numero era: ",numpc
+			SiNo
+				Escribir "se te acabaron los intentos el numero era:", numpc
+			FinSi
+		FinSi
+	FinSi
+FinAlgoritmo

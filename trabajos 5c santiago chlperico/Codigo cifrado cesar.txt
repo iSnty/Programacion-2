@@ -1,0 +1,28 @@
+﻿# Función de cifrado César
+def cifrado_cesar(frase, desplazamiento):
+    alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    resultado = ''
+
+    for char in frase:
+        if char.isalpha():
+            mayuscula = char.isupper()
+            index = alfabeto.index(char.upper())
+            index = (index + desplazamiento) % 26
+            resultado += alfabeto[index] if mayuscula else alfabeto[index].lower()
+        else:
+            resultado += char
+
+    return resultado
+
+# Solicitar al usuario que ingrese una frase
+frase_usuario = input("Ingrese una frase: ")
+
+# Desplazamiento para el cifrado
+desplazamiento = 3
+
+# Aplicar el cifrado César a la frase ingresada por el usuario
+frase_cifrada = cifrado_cesar(frase_usuario, desplazamiento)
+
+# Imprimir los resultados
+print("Frase original:", frase_usuario)
+print("Frase cifrada:", frase_cifrada)

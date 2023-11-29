@@ -1,0 +1,33 @@
+matriz = []
+        
+matriz = [ [1,2,3,4],
+         [5,6,7,8],
+         [9,10,11,12],
+         [13,14,15,16] ]
+# funcion para calcular la suma de la diagonal principal
+def suma_diagonal_principal(matriz)
+
+# funcion para calcular la multiplicacion de la diagonal principal
+    return sum(matriz[i][i] for i in range(len(matriz)))
+def multiplicacion_diagonal_principal(matriz)
+    result = 1
+    for i in range(len(matriz))
+     result = matriz[i][i]
+    
+    return result
+# funcion para calcular la sua de la contra diagonal
+def suma_contradiagonal(matriz)
+ return sum(matriz[i][len(matriz)-1-i] for i in range(len(matriz)))
+
+
+# funcion para calcular la multiplicacion de la contra diagonal
+def multiplicacion_contradiagonal(matriz)
+    result = 1
+    for i in range (len(matriz))
+        result = matriz[i][len(matriz)-1-i]
+    return result
+# impresion de los resultados con comentarios
+print(suma diagonal principal , suma_diagonal_principal(matriz))
+print(multiplicacion diagonal , multiplicacion_diagonal_principal(matriz))
+print(suma contra diagonal , suma_contradiagonal(matriz))
+print(multiplicacion contradiagonal , multiplicacion_contradiagonal(matriz))
